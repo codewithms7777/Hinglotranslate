@@ -1,0 +1,191 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at center, #001331, #00060f);
+  color: white;
+}
+
+.app {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  gap: 20px;
+}
+
+/* HEADER */
+header {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffdd00;
+  text-shadow: 0 0 10px #ffdd00, 0 0 25px #0051ff;
+  margin-bottom: 6px;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 20px;
+  color: #9cb9ff;
+}
+
+/* QUESTION CARD */
+.card {
+  background: rgba(0, 17, 40, 0.65);
+  border: 2px solid #004b9a;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 0 25px #004b9a;
+  backdrop-filter: blur(5px);
+}
+
+/* HINDI QUESTION */
+.hindi {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffdd00;
+  text-shadow: 0 0 7px #ffdd00;
+  margin-bottom: 25px;
+}
+
+/* OPTIONS */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
+.opt {
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #003b7a, #006fe6);
+  border: 2px solid #0051ff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0 15px rgba(0, 81, 255, 0.5);
+}
+
+.opt:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #0051ff;
+}
+
+.opt.correct {
+  background: #0c8f0c !important;
+  border-color: #27ff27 !important;
+  box-shadow: 0 0 20px #27ff27 !important;
+}
+
+.opt.wrong {
+  background: #9e0505 !important;
+  border-color: #ff4d4d !important;
+  box-shadow: 0 0 20px #ff4d4d !important;
+}
+
+/* LIFELINES */
+.lifelines {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.lifelines button {
+  padding: 10px 18px;
+  border-radius: 40px;
+  border: none;
+  background: #ffdd00;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 12px #ffdd00;
+  transition: 0.2s;
+}
+
+.lifelines button:hover {
+  transform: scale(1.08);
+}
+
+/* GAME OVER */
+.gameover {
+  background: rgba(0, 17, 40, 0.65);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #ffdd00;
+  box-shadow: 0 0 20px #ffdd00;
+}
+
+.gameover h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffdd00;
+  text-shadow: 0 0 9px #ffdd00;
+  margin-bottom: 10px;
+}
+
+.gameover button {
+  background: linear-gradient(90deg, #003b7a, #006fe6);
+  border: 2px solid #0051ff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 81, 255, 0.7);
+  transition: 0.2s;
+}
+
+.gameover button:hover {
+  transform: scale(1.07);
+}
+
+/* REWARD LADDER */
+.rewards {
+  background: rgba(0, 17, 40, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+  border: 2px solid #004b9a;
+  box-shadow: 0 0 18px #004b9a;
+}
+
+.rewards h3 {
+  text-align: center;
+  color: #ffdd00;
+  text-shadow: 0 0 6px #ffdd00;
+  font-size: 23px;
+}
+
+.rewards ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.rewards li {
+  padding: 6px 0;
+  font-size: 17px;
+  opacity: 0.8;
+  color: #cbd7ff;
+}
+
+.rewards li.active {
+  font-weight: 700;
+  color: #ffdd00;
+  opacity: 1;
+  text-shadow: 0 0 10px #ffdd00;
+}
